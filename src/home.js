@@ -32,7 +32,6 @@ const Home = () => {
 
     const setDataa = (itemId) => {
         setSearch(itemId)
-        // console.log("callIF###")
         const filteredData = Items.filter((element) => {
             return Object.values(element).join('').toLowerCase().includes(search.toLowerCase())
         })
